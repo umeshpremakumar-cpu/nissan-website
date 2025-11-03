@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pinnacle Nissan Sales Palakkad</title>
+  <style>
+    body {
+      
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color:rgb(245, 245, 245);
+      color: black;
+      scroll-behavior: smooth;
+    }
+
+    /* HEADER */
+    header {
+      position: sticky;
+      top: 0;
+      background: linear-gradient(90deg, #ff6600, #ff8800);
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      z-index: 1000;
+    }
+    header h1 {
+      font-size: 1.5rem;
+      margin: 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 500;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* HERO SECTION */
+    .hero {
+      background: url('') center center / cover no-repeat fixed;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.55);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 700px;
+      padding: 20px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+    .hero h2 {
+      font-size: 2.8rem;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+    .hero button {
+      background: #ff6600;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 30px;
+      font-size: 1rem;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .hero button:hover {
+      background: #ff8800;
+      transform: scale(1.05);
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+      text-align: center;
+    }
+    h3 {
+      font-size: 2rem;
+      color: #ff6600;
+      margin-bottom: 20px;
+    }
+    .about, .achievements, .contact {
+      animation: fadeIn 1s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(30px);} 
+      to {opacity: 1; transform: translateY(0);} 
+    }
+
+    /* IMAGE STYLE */
+    .magnite-img {
+      width: 100%;
+      max-width: 700px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+
+    /* GALLERY */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+    }
+    .gallery img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 12px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+    }
+
+    /* CONTACT INFO */
+    .contact-info p {
+      line-height: 1.8;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #111;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* FLOATING CALL BUTTON */
+    .floating-call {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #ff6600;
+      color: white;
+      padding: 15px;
+      border-radius: 50%;
+      font-size: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      cursor: pointer;
+      transition: transform 0.3s;
+      z-index: 1000;
+    }
+    .floating-call:hover {
+      transform: scale(1.1);
+      background: #ff8800;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .hero h2 {font-size: 2rem;}
+      header h1 {font-size: 1.2rem;}
+      nav {display: none;}
+      .hero {background-attachment: scroll;}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Pinnacle Nissan Palakkad</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#model">Nissan</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Drive Innovation with Pinnacle Nissan</h2>
+      <p>Experience the power, comfort, and style of the Nissan Magnite in Palakkad.</p>
+      <button onclick="window.location.href='#contact'">Book a Test Drive</button>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h3>About Us</h3>
+    <p>Welcome to <strong>Pinnacle Nissan Sales Palakkad</strong>, your trusted Nissan dealership located at Kannadi, Palakkad, Kerala. We are dedicated to delivering a superior car buying and service experience with integrity and passion. Our expert team ensures every customer enjoys a hassle-free and memorable journey with Nissan.</p>
+  </section>
+
+  <section id="model">
+    <h3>Our Model – Nissan Magnite</h3>
+    <img src="images/magnite red.jpg" alt="Nissan Magnite" class="magnite-img">
+    <p>The <strong>Nissan Magnite</strong> redefines compact SUVs with bold design, advanced features, and powerful performance. Visit our showroom to explore color options, features, and exclusive offers.</p>
+  </section>
+
+  <section id="gallery">
+    <h3>Gallery</h3>
+    <div class="gallery">
+      <img src="images/magnite red.jpg">
+      <img src="images/nissan showroom.jpg" alt="Magnite Display">
+      <img src="images/magnite delivery.jpg" alt="Car Delivery">
+      <img src="images/service center.jpg" alt="Service Area">
+      <img src="images/nissan service.jpg" alt="Customer Event">
+      <img src="images/magnite  black.jpg" alt="Nissan Magnite Front View">
+    </div>
+  </section>
+
+  <section id="achievements" class="achievements">
+    <h3>Our Achievements</h3>
+    <p>🏅 10,000+ Happy Customers Served Across Palakkad & Kerala<br>
+    🚗 Consistently Rated 4.9★ on Customer Satisfaction Surveys<br>
+    🏆 Awarded Best Performing Nissan Dealer 2024<br>
+    🌟 Committed to excellence in every drive.</p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h3>Contact Us</h3>
+    <div class="contact-info">
+      <p><b></b><strong>Address:</strong> pinnacle nissan sales, Palakkad, Kerala 678701</p>
+      <p><b></b><strong>Phone:</strong> <a href="tel:9072600136">9072600136</a></p>
+      <p><b></b><strong>Email:</strong> <a href="mailto:asmsales.pkd@pinnaclenissan.co.in">asmsales.pkd@pinnaclenissan.co.in</a></p>
+      <p><b></b><strong>Hours:</strong> Monday to Saturday – 9:00 AM to 5:30 PM</p>
+    </div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d501704.9962731936!2d76.08717567343747!3d10.767563599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8736b754c2c43%3A0xb959bd3d10d5e6a9!2sPinnacle%20Nissan%20service!5e0!3m2!1sen!2sin!4v1762166618117!5m2!1sen!2sin" width="850" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+  <footer>
+    <p>© 2025 Pinnacle Nissan Sales Palakkad | All Rights Reserved</p>
+  </footer>
+
+  <a href="tel:9072600136" class="floating-call">📞</a>
+</body>
+</html>
